@@ -1,0 +1,129 @@
+.allContainer {
+    background-color: var(--neutral-300);
+    min-height: 100vh;
+}
+
+.formContainer {
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--neutral-500);
+    padding: 25px 25px 35px;
+    top: 100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    box-shadow: 0 16px 32px #00000011;
+}
+
+.form1 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.planCards {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    flex-flow: column nowrap;
+}
+
+.form3 {
+    display: flex;
+    margin-top: 25px;
+    gap: 12px;
+    flex-flow: column nowrap;
+}
+
+.form4 {
+
+    margin-top: 30px;
+}
+
+.complete {
+    display: flex;
+    height: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0 45px 0; 
+}
+
+.iconThankYou {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+}
+.navButtons {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: var(--neutral-500);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 500px) {
+    .allContainer {
+        display: grid;
+        place-items: center;
+    }
+    .formContainer {
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        box-shadow: none;
+        max-width: 650px;
+        width: 650px;
+        padding:  30px 100px;
+        margin: 15px auto;
+    }
+
+    .contentContainer {
+        display: flex;
+        max-width: 950px;
+        max-height: 600px;
+        height: 600px;
+        width: 950px;
+        background-color: var(--neutral-500);
+        /* padding: 15px; */
+        border-radius: 15px;
+    }
+
+    .navLinksContainer {
+        margin: 15px 0 15px 15px;
+        flex-grow: 2;
+    }
+
+    .navButtons {
+        bottom: 15px;
+        left: 100px;
+        right: 100px;
+        width: unset;
+        position: absolute;
+        padding: 0;
+    }
+    
+    .planCards {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .form3 {
+        gap: 16px;
+    }
+    
+    .form4 {
+        margin-top: 40px;
+    }
+    .iconThankYou {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+}
